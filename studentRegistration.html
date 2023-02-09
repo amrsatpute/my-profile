@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Playfair+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <title>Registration form</title>
+    <style>
+       input[type="text"]{
+            /* width: 166px; */
+            padding: 6px;
+            color:  rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+        }
+        input[type="number"]{
+            color:  rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="number"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="email"]{
+            padding: 6px;
+            color:  rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="password"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="date"]{
+            padding: 6px;
+            color:  rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="india"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="radio"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="file"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            font-family: 'Playfair Display', serif;
+
+        }
+        input[type="checkbox"]{
+            padding: 6px;
+            color: rgb(114, 140, 140);
+            padding: 6px;
+
+        }
+        #faculty{
+            color: rgb(114, 140, 140);
+            padding: 6px;
+        }
+        #gender{
+            color:  rgb(114, 140, 140);
+            padding: 6px;
+          
+        }
+        label{
+            color: rgb(114, 140, 140);
+            padding: 6px;
+           
+        }
+        textarea[rows="5"]{
+            color: rgb(188, 112, 30);
+            padding: 6px;
+        }
+        #address{
+           color: rgb(114, 140, 140);
+           padding: 6px;
+        }
+
+        #titleNAme {
+            color: rgb(6, 160, 160);
+            font-family: 'Playfair Display', serif;
+        }
+        #hobbies{
+            padding: 6px;
+        }
+        .submit{
+            color: rgb(114, 140, 140);
+        }
+        .Reset{
+            color: rgb(114, 140, 140);
+        }
+        body {
+            background-color: azure;
+        }
+    </style>
+</head>
+<fieldset>
+
+    <legend>
+        <span id="titleNAme">
+            <h1>Student Registration form</h1>
+        </span>
+    </legend>
+
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <td><label>First Name:</label></td>
+                    <td><input type="text" maxlength="10" width="100px" required autofocus placeholder="Fisrt Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Last Name:</label></td>
+                    <td><input type="text" maxlength="10" required placeholder="Last Name"> </td>
+                </tr>
+                <tr>
+                    <td><label> Age: </label></td>
+                    <td><input type="number" max="98" required placeholder="Age"> </td>
+                </tr>
+                <tr>
+                    <td><label>Mobile No:</label></label></td>
+                    <td><input type="number" max="10" placeholder="Mobile No"></td>
+                </tr>
+                <tr>
+                    <td><label>Email:</label></label></td>
+                    <td><input type="email" placeholder="Email"> </td>
+                </tr>
+                <tr>
+                    <td><label>Password:</label></label></td>
+                    <td><input type="password" placeholder="Password"></td>
+                </tr>
+                <tr>
+                    <td><label>Date Of Birth:</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label>Country:</label></td>
+                    <td><input type="India" value="India" readonly></td>
+                </tr>
+                <tr>
+                    <td><label>Select Degree:</label></td>
+                    <td>
+                        <select id="faculty">
+                            <option>MCA</option>
+                            <option>BCA</option>
+                            <option>BBA</option>
+                            <option>MCS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label id="gender">Select Gender:</label></td>
+                    <td>
+                        <input type="radio" name="Gender"><label id="gender">Male</label>
+                        <input type="radio" name="Gender"><label id="gender">Female</label>
+                        <input type="radio" name="Gender"><label id="gender">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label id="Hobbies">Select Your Hobbies:</label></td>
+                    <td><input type="checkbox"><label id="gender">Readding</label>
+                        <input type="checkbox"><label id="gender">Learning</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Uplod Profile Photo:</label></td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td><label>Uplod Gruduation Mark Sheet:</label></td>
+                    <td><input type="file" multiple></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <lable id="address">Present Address:</lable>
+                    </td>
+                    <td> <textarea rows="5" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="submit">Submit</button>
+                    </td>
+                    <td>
+                        <button class="Reset">Reset</button>
+                    </td>
+                </tr>
+            </thead>
+
+        </table>
+    </form>
+</fieldset>
+
+</html>
+</body
